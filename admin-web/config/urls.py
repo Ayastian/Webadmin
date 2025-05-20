@@ -19,7 +19,6 @@ from django.urls import path
 from panel import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', views.login_admin, name='login'),
     path('dashboard/', views.dashboard, name='dashboard'),
     path('sucursales/', views.sucursales, name='sucursales'),

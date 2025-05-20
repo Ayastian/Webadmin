@@ -8,7 +8,6 @@ __pycache__/
 .env
 
 # Archivos estáticos generados
-static/css/dist/
 media/
 
 # Archivos temporales
