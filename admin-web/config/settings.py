@@ -134,8 +134,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),  # si usas /static
-    os.path.join(BASE_DIR, 'theme', 'static'),  # aquí está tu styles.css de Tailwind
+    os.path.join(BASE_DIR, 'theme', 'static'),  # donde está tu styles.css
 ]
 
 
