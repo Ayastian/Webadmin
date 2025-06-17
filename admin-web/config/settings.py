@@ -18,9 +18,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Seguridad
 SECRET_KEY = get_env_variable("DJANGO_SECRET_KEY")
-DEBUG = True
-ALLOWED_HOSTS = ['*']  # Puedes cambiar esto por tu dominio personalizado
+DEBUG = os.getenv("DEBUG", "False") == "True"
+# Hosts permitidos
+ALLOWED_HOSTS = ['webadmin-production.up.railway.app']
 
+# Orígenes confiables para CSRF (¡imprescindible!)
+CSRF_TRUSTED_ORIGINS = [
+    'https://webadmin-production.up.railway.app',
+]
 # Aplicaciones instaladas
 INSTALLED_APPS = [
     'django.contrib.admin',
