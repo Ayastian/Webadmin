@@ -18,7 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Seguridad
 SECRET_KEY = get_env_variable("DJANGO_SECRET_KEY")
-DEBUG = os.getenv("DEBUG", "False") == "True"
+DEBUG = True
 ALLOWED_HOSTS = ['*']  # Puedes cambiar esto por tu dominio personalizado
 
 # Aplicaciones instaladas
